@@ -1,0 +1,19 @@
+[18-Jun-2023 21:34:38 UTC] PHP Warning:  fopen(logo.PNG): failed to open stream: No such file or directory in /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/fpdf/fpdf.php on line 1257
+[18-Jun-2023 21:34:38 UTC] PHP Fatal error:  Uncaught Exception: FPDF error: Can't open image file: logo.PNG in /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/fpdf/fpdf.php:271
+Stack trace:
+#0 /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/fpdf/fpdf.php(1259): FPDF->Error('Can't open imag...')
+#1 /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/fpdf/fpdf.php(885): FPDF->_parsepng('logo.PNG')
+#2 /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/post.php(501): FPDF->Image('logo.PNG', 120, 8, 80, 35)
+#3 /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/post.php(49): crear_pdf(Array, Array, Array, Array, '20108081202-01-...', Array, Array)
+#4 {main}
+  thrown in /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/fpdf/fpdf.php on line 271
+[18-Jun-2023 21:35:39 UTC] PHP Warning:  imagepng(files/facturacion_electronica/qr/01-0001-00053953.png): failed to open stream: No such file or directory in /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/qr/phpqrcode/qrimage.php on line 43
+[18-Jun-2023 21:35:39 UTC] PHP Warning:  fopen(files/facturacion_electronica/qr/01-0001-00053953.png): failed to open stream: No such file or directory in /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/fpdf/fpdf.php on line 1257
+[18-Jun-2023 21:35:39 UTC] PHP Fatal error:  Uncaught Exception: FPDF error: Can't open image file: files/facturacion_electronica/qr/01-0001-00053953.png in /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/fpdf/fpdf.php:271
+Stack trace:
+#0 /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/fpdf/fpdf.php(1259): FPDF->Error('Can't open imag...')
+#1 /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/fpdf/fpdf.php(885): FPDF->_parsepng('files/facturaci...')
+#2 /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/post.php(667): FPDF->Image('files/facturaci...', 80, 240, 40, 40)
+#3 /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/post.php(49): crear_pdf(Array, Array, Array, Array, '20108081202-01-...', Array, Array)
+#4 {main}
+  thrown in /home/facturacioninteg/public_html/aplicaciones_sistemas/API_SUNAT/libraries/fpdf/fpdf.php on line 271
