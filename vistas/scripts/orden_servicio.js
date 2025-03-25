@@ -150,7 +150,7 @@ function listar() {
 		autoWidth: false,
 		 bDestroy: true,
 		 order: [
-        [0, 'asc']    ],
+        [1, 'asc']    ],
 		 language: {
 		   search: "Buscar por",
 		   lengthMenu:    "Mostrar _MENU_ Elementos",

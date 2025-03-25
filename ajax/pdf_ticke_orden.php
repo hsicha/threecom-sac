@@ -50,7 +50,7 @@ function pdf_obt($servicio){
 
 function ticket_pdf($empresa,$sede,$servicio){
 
-$pdf = new fpdf('P', 'mm', array(80, 240));
+$pdf = new fpdf('P', 'mm', array(80, 250));
 $pdf->AddPage();
 $pdf->SetMargins(5, 5, 5,5);
 //$pdf->MultiCell(70, 5,  $empresa["nombre_comercial"], 0, 'C');

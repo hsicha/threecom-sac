@@ -41,7 +41,7 @@ switch ($_GET["op"]){
 			echo $rspta ? "Artículo registrado" : "Artículo no se pudo registrar";
 		}
 		else {
-			$rspta=$articulo->editar($idarticulo,$cod_sunat,$cod_prod,$nombre_prod, $idcategoria,$idmarca,$idpresentacion,$id_unidMed,$stock,$imagen,$pre_venta,$pre_costo);
+			$rspta=$articulo->editar($idarticulo,$cod_sunat,$cod_prod,$nombre_prod, $idcategoria,$idmarca,$idpresentacion,$id_unidMed,$stock,"",$pre_venta,$pre_costo);
 			echo $rspta ? "Artículo actualizado" : "Artículo no se pudo actualizar";
 		}
 	break;
@@ -135,7 +135,7 @@ switch ($_GET["op"]){
 				}
 				break;
 				case 'stock_minimo':
-					$rspta=$articulo->listar_stock_minimo($codigo_almacen);
+					$rspta=$articulo->listar_stock_minimo($idsde);
 			 		//Vamos a declarar un array
 			 		$data= Array();
 			

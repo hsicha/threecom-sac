@@ -176,7 +176,7 @@ switch ($venta['idtipo_doc']) {
             $tipo_documento = 'FACTURA';
             break;  
         case '02':
-            $tipo_documento='PROFORMA';
+            $tipo_documento='NOTA DE VENTA';
             break;     
         case '03':
             $tipo_documento = 'BOLETA';
